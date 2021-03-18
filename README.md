@@ -6,3 +6,8 @@ sample_type.txt, map_info.txt and genotyping_data.txt. These are all available a
 
 Check that script.pl and identify_introgressions.pl are both executable and that the directory has RW permissions then run with:
 nohup ./script.pl &
+
+Once the job is complete, the output files can be processed with the use of the pipeline.pl script, with the shell script process_files.sh feeding all of the directories created by script.pl into the pipeline one at a time:
+nohup ./process_files.sh &
+
+
